@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BookOpen, Lock, Mail, User, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle2 } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 const DEMO_EMAIL = 'demo@kaagaz.ai';
 const DEMO_PASSWORD = 'password123';
 
